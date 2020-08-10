@@ -1,11 +1,92 @@
+@import "../../styles.scss";
+
 .form {
-    width: 90vw;
+    height: 90vh;
+    margin: 0px 130px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     .formBox {
+        width: 40vw;
+        margin: 5em 0px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 2.5em;
+
+            color: $purple;
+
+            margin: 0px;
+            margin-bottom: 1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: 500;
+                font-size: 0.8em;
+
+                color: $gray;
+
+                margin: 10px 0px;
+            }
+            input {
+                font-weight: 400;
+                font-size: 0.8em;
+
+                padding: 8px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                margin-bottom: 2.5em;
+            }
+            textarea {
+                resize: none;
+
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 0.8em;
+
+                padding: 8px;
+
+                height: 185px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                margin-bottom: 4em;
+            }
+            button {
+                width: 9em;
+                height: 2.5em;
+
+                padding: 8px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                background-color: $purple;
+
+                color: white;
+
+                font-weight: 500;
+                font-size: 0.9em;
+                font-family: 'Rubik', sans-serif;
+
+                align-self: flex-end;
+            }
+        }
 
     }
 
     .formLogo {
-
+        width: 20vw;
+        background-color: $purple;
+        background-image: url("../../assets/background.svg");
     }
 }
