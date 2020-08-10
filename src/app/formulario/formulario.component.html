@@ -3,10 +3,10 @@
         <h2>Comentários</h2>
         <form>
             <label for="name">Nome</label>
-            <input type="text" name="name">
+            <input type="text" name="name" [(ngModel)]="commentName">
             <label for="message">Mensagem</label>
-            <textarea name="message"></textarea>
-            <button type="submit">Adicionar</button>
+            <textarea name="message" [(ngModel)]="commentMessage"></textarea>
+            <button type="submit" (click)="AddComment()">Adicionar</button>
         </form>
     </div>
     <div class="formLogo">
