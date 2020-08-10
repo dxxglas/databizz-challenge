@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # cache
-/.firebase
+.firebase
