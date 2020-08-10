@@ -1,16 +1,15 @@
 @import "../../styles.scss";
 
 .form {
-    height: 90vh;
-    margin: 0px 130px;
+    margin: 0px 7.5em;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
     .formBox {
-        width: 40vw;
-        margin: 5em 0px;
+        width: 35vw;
+        margin: 6em 0px;
 
         h2 {
             font-weight: 500;
@@ -43,7 +42,7 @@
                 border: 1px solid $purple;
                 border-radius: 5px;
 
-                margin-bottom: 2.5em;
+                margin-bottom: 2em;
             }
             textarea {
                 resize: none;
@@ -54,15 +53,15 @@
 
                 padding: 8px;
 
-                height: 185px;
+                height: 120px;
 
                 border: 1px solid $purple;
                 border-radius: 5px;
 
-                margin-bottom: 4em;
+                margin-bottom: 3.5em;
             }
             button {
-                width: 9em;
+                width: 8.5em;
                 height: 2.5em;
 
                 padding: 8px;
@@ -85,8 +84,19 @@
     }
 
     .formLogo {
-        width: 20vw;
+        width: 25vw;
         background-color: $purple;
         background-image: url("../../assets/background.svg");
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            width: 220px;
+            margin: 50px;
+        }
     }
 }
