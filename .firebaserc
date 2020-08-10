@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "databizz-challenge-e4d93": {
+      "hosting": {
+        "databizz-challenge": [
+          "databizz-challenge-e4d93"
+        ]
+      }
+    }
+  }
+}
