@@ -1,0 +1,7 @@
+<div class="feed">
+    <h3>Últimos comentários</h3>
+    <div class="feedComment" *ngFor="let item of comments">
+        <p>{{item.message}}</p>
+        <p class="feedCommentName">{{item.name}}</p>
+    </div>
+</div>
