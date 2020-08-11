@@ -19,14 +19,12 @@ export class FormularioComponent implements OnInit {
   }
 
   AddComment() {
-    console.log('here')
     let record = {};
     record['Name'] = this.commentName;
     record['Message'] = this.commentMessage;
     this.commentsService.create_newComment(record).then(resp => {
       this.commentName="";
       this.commentMessage = "";
-      console.log(resp);
     })
     .catch(error => {
       console.log(error);

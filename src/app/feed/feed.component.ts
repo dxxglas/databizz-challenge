@@ -23,7 +23,6 @@ export class FeedComponent implements OnInit {
         message: e.payload.doc.data()['Message'],
       };
       })
-      console.log(this.comments);
       });
   }
 
