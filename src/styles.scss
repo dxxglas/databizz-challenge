@@ -8,3 +8,9 @@ body {
     margin: 0px 7.5em;
     font-family: 'Rubik', sans-serif;
 }
+
+@media screen and (max-width: 950px) {
+    body {
+        margin: 0px 2em;
+    }
+}

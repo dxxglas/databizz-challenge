@@ -2,7 +2,7 @@
 
 .form {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 
     .formBox {
@@ -106,8 +106,36 @@
         align-items: center;
 
         img {
-            width: 220px;
+            width: 70%;
             margin: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form {
+        .formBox {
+            width: 100%;
+            margin: 3em 0px;
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 0.5em;
+            }
+        }
+        .formLogo {
+            width: 100vw;
+            height: 30vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 0;
+                width: 120px;
+            }
         }
     }
 }
