@@ -22,7 +22,7 @@ export class FormularioComponent implements OnInit {
     let record = {};
     record['name'] = this.commentName;
     record['message'] = this.commentMessage;
-    record['data'] = new Date();
+    record['date'] = new Date();
     this.commentsService.create_newComment(record)
     .then(res => {
       this.commentName="";
