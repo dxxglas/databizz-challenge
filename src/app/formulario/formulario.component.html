@@ -1,0 +1,15 @@
+<div class="form">
+    <div class="formBox">
+        <h2>Comentários</h2>
+        <form ngNativeValidate #form="ngForm">
+            <label for="name">Nome</label>
+            <input type="text" name="name" [(ngModel)]="commentName" required>
+            <label for="message">Mensagem</label>
+            <textarea name="message" [(ngModel)]="commentMessage" required></textarea>
+            <button type="submit" (click)="AddComment()" [disabled]="form.invalid">Adicionar</button>
+        </form>
+    </div>
+    <div class="formLogo">
+        <img src="../../assets/logo.svg" alt="logo">
+    </div>
+</div>

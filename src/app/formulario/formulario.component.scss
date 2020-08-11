@@ -1,0 +1,115 @@
+@import "../../styles.scss";
+
+.form {
+    margin: 0px 7.5em;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .formBox {
+        width: 35vw;
+        margin: 6em 0px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 2.5em;
+
+            color: $purple;
+
+            margin: 0px;
+            margin-bottom: 1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: 500;
+                font-size: 0.8em;
+
+                color: $gray;
+
+                margin: 10px 0px;
+            }
+            input {
+                font-weight: 400;
+                font-size: 0.8em;
+
+                padding: 8px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                margin-bottom: 2em;
+            }
+            textarea {
+                resize: none;
+
+                font-family: 'Rubik', sans-serif;
+                font-weight: 400;
+                font-size: 0.8em;
+
+                padding: 8px;
+
+                height: 120px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                margin-bottom: 3.5em;
+            }
+            button {
+                width: 8.5em;
+                height: 2.5em;
+
+                padding: 8px;
+
+                border: 1px solid $purple;
+                border-radius: 5px;
+
+                background-color: $purple;
+
+                color: white;
+
+                font-weight: 500;
+                font-size: 0.9em;
+                font-family: 'Rubik', sans-serif;
+
+                align-self: flex-end;
+
+                &:hover {
+                    border: 1px solid $purple;
+                    background-color: white;
+                    color: $purple;
+                }
+
+                &:disabled{
+                    border: 1px solid $purple;
+                    background-color: $purple;
+                    color: white;
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+
+    .formLogo {
+        width: 25vw;
+        background-color: $purple;
+        background-image: url("../../assets/background.svg");
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        img {
+            width: 220px;
+            margin: 50px;
+        }
+    }
+}
