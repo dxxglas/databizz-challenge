@@ -19,10 +19,11 @@ export class FeedComponent implements OnInit {
       this.comments = data.map(e => {
       return{
         id: e.payload.doc.id,
-        name: e.payload.doc.data()['Name'],
-        message: e.payload.doc.data()['Message'],
+        name: e.payload.doc.data()['name'],
+        message: e.payload.doc.data()['message'],
+        date: e.payload.doc.data()['date']
       };
-      })
+      }).sort((a, b) => a.date > b.date ? -1 : 1)
       });
   }
 
