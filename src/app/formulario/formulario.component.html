@@ -1,12 +1,12 @@
 <div class="form">
     <div class="formBox">
         <h2>Comentários</h2>
-        <form>
+        <form ngNativeValidate #form="ngForm">
             <label for="name">Nome</label>
-            <input type="text" name="name" [(ngModel)]="commentName">
+            <input type="text" name="name" [(ngModel)]="commentName" required>
             <label for="message">Mensagem</label>
-            <textarea name="message" [(ngModel)]="commentMessage"></textarea>
-            <button type="submit" (click)="AddComment()">Adicionar</button>
+            <textarea name="message" [(ngModel)]="commentMessage" required></textarea>
+            <button type="submit" (click)="AddComment()" [disabled]="form.invalid">Adicionar</button>
         </form>
     </div>
     <div class="formLogo">
