@@ -1,0 +1,31 @@
+@import "../../styles.scss";
+
+.feed {
+    margin: 6em 0px;
+    h3{
+        font-weight: 500;
+        font-size: 2em;
+
+        color: $purple;
+
+        margin: 0px;
+        margin-bottom: 1.5em;
+    }
+    .feedComment {
+        width: 92%;
+        margin-bottom: 2.2em;
+
+        p {
+            font-weight: 400;
+            font-size: 0.8em;
+
+            color: $gray;
+
+            margin: 1.5em 0px;
+        }
+
+        .feedCommentName {
+            font-weight: 500;
+        }
+    }
+}
