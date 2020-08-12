@@ -4,10 +4,11 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    align-items: flex-end;
 
     .formBox {
         width: 35vw;
-        margin: 6em 0px;
+        margin: 7vw 0px;
 
         h2 {
             font-weight: 500;
@@ -100,6 +101,7 @@
 
     .formLogo {
         width: 25vw;
+        height: 95vh;
         background-color: $purple;
         background-image: url("../../assets/background.svg");
         background-size: cover;
