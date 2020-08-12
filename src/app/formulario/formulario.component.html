@@ -6,7 +6,12 @@
             <input type="text" name="name" [(ngModel)]="commentName" required>
             <label for="message">Mensagem</label>
             <textarea name="message" [(ngModel)]="commentMessage" required></textarea>
-            <button type="submit" (click)="AddComment()" [disabled]="form.invalid">Adicionar</button>
+            <button 
+                type="submit" 
+                (click)="AddComment()" 
+                [disabled]="form.invalid"
+                title="Para adicionar, preencha os campos anteriores."
+            >Adicionar</button>
         </form>
     </div>
     <div class="formLogo">
