@@ -4,10 +4,11 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
+    align-items: flex-end;
 
     .formBox {
         width: 35vw;
-        margin: 6em 0px;
+        margin: 7vw 0px;
 
         h2 {
             font-weight: 500;
@@ -81,6 +82,8 @@
                     border: 1px solid $purple;
                     background-color: white;
                     color: $purple;
+
+                    cursor: pointer;
                 }
 
                 &:disabled{
@@ -88,6 +91,8 @@
                     background-color: $purple;
                     color: white;
                     opacity: 0.7;
+
+                    cursor: not-allowed;
                 }
             }
         }
@@ -96,6 +101,7 @@
 
     .formLogo {
         width: 25vw;
+        height: 95vh;
         background-color: $purple;
         background-image: url("../../assets/background.svg");
         background-size: cover;
